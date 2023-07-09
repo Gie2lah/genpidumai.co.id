@@ -3,25 +3,96 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Customize these variable */
+  /* https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo */
+  /* /* --tw-clr-primary-50: #eff0fe;
+  --tw-clr-primary-100: #e1e3fe;
+  --tw-clr-primary-200: #c9cbfc;
+  --tw-clr-primary-300: #a8a9f9;
+  --tw-clr-primary-400: #8c85f4;
+  --tw-clr-primary-500: #7a68ec;
+  --tw-clr-primary-600: #6b4be0;
+  --tw-clr-primary-700: #5c3dc5;
+  --tw-clr-primary-800: #473196;
+  --tw-clr-primary-900: #40317e;
+
+  --clr-primary-50: rgb(var(--tw-clr-primary-50));
+  --clr-primary-100: rgb(var(--tw-clr-primary-100)); 
+  --clr-primary-200: rgb(var(--tw-clr-primary-200)); 
+  --clr-primary-300: rgb(var(--tw-clr-primary-300)); 
+  --clr-primary-400: rgb(var(--tw-clr-primary-400)); 
+  --clr-primary-500: rgb(var(--tw-clr-primary-500)); 
+  --clr-primary-600: rgb(var(--tw-clr-primary-600)); 
+  --clr-primary-700: rgb(var(--tw-clr-primary-700)); 
+  --clr-primary-800: rgb(var(--tw-clr-primary-800)); 
+  --clr-primary-900: rgb(var(--tw-clr-primary-900));  */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
+.cursot-newtab {
+  cursor: url("/website-genpi/public/images/new-tab.png") 10 10 pointer;
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1,
+.h1 {
+  @apply text-2xl font-bold md:text-4xl;
+}
+
+h2,
+.h2 {
+  @apply text-xl font-bold md:text-3xl;
+}
+
+h3,
+.h3 {
+  @apply text-lg font-bold md:text-2xl;
+}
+
+h4,
+.h4 {
+  @apply text-base font-bold md:text-lg;
+}
+
+body,
+.body {
+  @apply text-sm md:text-base;
+}
+
+.card {
+  /* padding: 20px; */
+  /* width: 330px; */
+  max-width: 330;
+  min-height: 370px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  /* box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #dadada; */
+  box-shadow: -7px 5px 12px -4px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  /* background-image: url(../../public/images/topography.svg); */
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-image {
+  /* min-height: 170px; */
+  background-color: #c9c9c9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2px 4px 2px 4px;
+  margin-top: 12px;
 }
