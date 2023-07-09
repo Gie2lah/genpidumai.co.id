@@ -1,17 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import React from "react";
 import Image from "next/image";
 import getDestinasiMetaData from "../../components/getDestinasiMetaData";
-import DestinasiPreview from "../../components/DestinasiPreview";
 import logo from "../../public/images/Logo-GenPI2.png";
-import {
-  IoBedOutline,
-  IoCalendarClearOutline,
-  IoMapOutline,
-  IoRestaurantOutline,
-} from "react-icons/io5";
+import { IoRestaurantOutline } from "react-icons/io5";
 import UnstyledLink from "../../components/link/UnstyledLink";
 import Button from "../../components/button/Button";
-import Animasi from "../../components/Animasi";
+import DestinasiPreview from "../../components/DestinasiPreview";
 
 export default function Home() {
   const destinasiMetaData = getDestinasiMetaData();
@@ -22,20 +17,37 @@ export default function Home() {
     ));
   return (
     <>
-      <section className="body bg-no-repeat bg-cover min-h-screen flex flex-col items-center pt-[120px] text-white">
-        <Image src={logo} alt={""} width={200} height={200} />
-        <h4 className="text-2xl tracking-widest">
-          <q>Molah ke Dumai</q>
-        </h4>
+      <section className="body min-h-screen py-[120px] px-[10%] text-white">
+        <div className="flex flex-wrap justify-between items-center mx-auto flex-col-reverse md:flex-row">
+          <div className="w-full md:w-1/2">
+            <h4 className="tracking-wider">Welcome to</h4>
+            <h1 className="mb-3 md:leading-none lg:leading-tight">
+              Generasi Pesona Indonesia
+              <span className="text-blue-600"> Kota Dumai</span>
+            </h1>
+            <p className="leading-relaxed mb-3">
+              Temukan berbagai macam objek wisata, cinderamata, budaya, kuliner,
+              event serta kreativitas lainnya.
+            </p>
+            <Button className="bg-blue-500 border-none">
+              <UnstyledLink href="#menu-kategori" className="text-black">
+                Explore GenPI
+              </UnstyledLink>
+            </Button>
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+            <Image src={logo} alt={""} width={400} height={400} />
+          </div>
+        </div>
       </section>
       <section className="min-h-screen py-[120px] px-[10%] bg-white">
-        <h2>
+        <h2 id="menu-kategori">
           <span className="bg-gradient-to-tr from-primary-500 to-primary-800">
             Menu Kategori
           </span>
         </h2>
-        <div className=" bg-slate-400 rounded-sm py-2 mt-3">
-          <div className="flex flex-wrap gap-3">
+        <div className="rounded-sm py-2 mt-3">
+          <div className="flex flex-wrap justify-between gap-3">
             <div className="bg-white p-4 max-w-xs rounded-md ">
               <ul className="p-4">
                 <UnstyledLink href={"#"}>
@@ -111,6 +123,11 @@ export default function Home() {
         <Button>
           <UnstyledLink href="/destinasi">Wisata Lainnya</UnstyledLink>
         </Button>
+        <div className="hidden">
+          <button className="border py-2 px-4 bg-white font-bold rounded-md shadow-md drop-shadow-md hover:scale-[1.02]">
+            get
+          </button>
+        </div>
       </section>
       <section className="min-h-screen py-[120px] px-[10%] bg-white">
         <h2>
@@ -119,28 +136,7 @@ export default function Home() {
           </span>
         </h2>
       </section>
-      <section className="min-h-screen py-[120px] px-[10%] bg-white">
-        <div className="flex ">
-          <div className="text-black text-xl">Temukan</div>
-          <ul className="ml-[15px] h-[90px] leading-[90px] overflow-hidden">
-            <li className="ketik">
-              <span className="span">Objek Wisata</span>
-            </li>
-            <li className="ketik">
-              <span className="span">Kuliner</span>
-            </li>
-            <li className="ketik">
-              <span className="span">Penginapan</span>
-            </li>
-            <li className="ketik">
-              <span className="span">Cinderamata</span>
-            </li>
-            <li className="ketik">
-              <span className="span">Event</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <section className="min-h-screen py-[120px] px-[10%] bg-white"></section>
     </>
   );
 }

@@ -6,5 +6,4 @@ export interface DestinasiMetaData {
   tags: string;
   slug: string;
   author: string;
-  checkTagged?: (tag: string) => boolean;
 }

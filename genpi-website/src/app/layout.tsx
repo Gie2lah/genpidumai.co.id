@@ -1,10 +1,14 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import "./globals.css";
-import { Inter, Quicksand } from "next/font/google";
+import { Inter, Quicksand, Lilita_One } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
+const lilitaOne = Lilita_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata = {
   title: "GenPI Dumai",

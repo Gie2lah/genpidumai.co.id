@@ -3,7 +3,7 @@ import { DestinasiMetaData } from "./DestinasiMetaData";
 import Image from "next/image";
 import UnstyledLink from "./link/UnstyledLink";
 
-const DestinasiPreview = (props: DestinasiMetaData) => {
+function DestinasiPreview(props: DestinasiMetaData) {
   return (
     <div className="card mb-1">
       <UnstyledLink href={`/destinasi/${props.slug}`}>
@@ -26,6 +26,6 @@ const DestinasiPreview = (props: DestinasiMetaData) => {
       </UnstyledLink>
     </div>
   );
-};
+}
 
 export default DestinasiPreview;

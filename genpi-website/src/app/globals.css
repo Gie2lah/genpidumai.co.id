@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,7 +49,8 @@ html {
 
 h1,
 .h1 {
-  @apply text-2xl font-bold md:text-4xl;
+  @apply text-2xl font-bold md:text-5xl;
+  font-family: "Lilita One", cursive;
 }
 
 h2,
@@ -123,11 +125,12 @@ body,
 .ketik {
   list-style: none;
   color: #ffc711;
+  background-color: white;
   font-size: 60px;
   font-weight: 500;
   position: relative;
   top: 0;
-  animation: slide 14s steps(4) infinite;
+  animation: slide 12s steps(4) infinite;
 }
 @keyframes slide {
   100% {
@@ -146,9 +149,9 @@ ul li span::after {
   left: 0;
   height: 78px;
   width: 100%;
-  background: #ffffff;
+  background: white;
   border-left: 2px solid black;
-  animation: typing 8s steps(10) infinite;
+  animation: typing 3s steps(14) infinite;
 }
 
 @keyframes typing {

@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 const Header = () => {
   return (
-    <header className=" right-0 left-0 fixed z-30 text-black font-bold ">
+    <header className=" right-0 top-0 left-0 fixed z-30 text-black font-bold ">
       <nav className="flex items-center justify-between px-[10%] py-[10px] shadow-md drop-shadow-md bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
         <Link href="/">
           <Image src={logo} alt={"logo-genpi"} width={50} height={50} />
