@@ -29,7 +29,7 @@ export default function Home() {
               Temukan berbagai macam objek wisata, cinderamata, budaya, kuliner,
               event serta kreativitas lainnya.
             </p>
-            <Button className="bg-blue-500 border-none">
+            <Button className="bg-blue-500 border-blue-500">
               <UnstyledLink href="#menu-kategori" className="text-black">
                 Explore GenPI
               </UnstyledLink>
