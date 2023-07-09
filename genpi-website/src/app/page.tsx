@@ -21,7 +21,7 @@ export default function Home() {
     ));
   return (
     <>
-      <section className="bg-[url(../../public/images/pantai3.jpg)] bg-no-repeat bg-cover min-h-screen flex flex-col items-center pt-[120px] text-white">
+      <section className="body bg-no-repeat bg-cover min-h-screen flex flex-col items-center pt-[120px] text-white">
         <Image src={logo} alt={""} width={200} height={200} />
         <h4 className="text-2xl tracking-widest">
           <q>Molah ke Dumai</q>
@@ -33,22 +33,67 @@ export default function Home() {
             Menu Kategori
           </span>
         </h2>
-        <div className=" bg-slate-400 rounded-sm py-2 px-4 mt-3">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            <div className="bg-white p-4 max-w-md ">
-              <div className="flex flex-col justify-center">
-                <IoRestaurantOutline
-                  size={50}
-                  className="rounded-md bg-blue-600 border"
-                />
-                <p>Restaurant</p>
-              </div>
+        <div className=" bg-slate-400 rounded-sm py-2 mt-3">
+          <div className="flex flex-wrap gap-3">
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
             </div>
-            <div>
-              <IoRestaurantOutline size={50} />
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
             </div>
-            <div>
-              <IoRestaurantOutline size={50} />
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
+            </div>
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
+            </div>
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
+            </div>
+            <div className="bg-white p-4 max-w-xs rounded-md ">
+              <ul className="p-4">
+                <UnstyledLink href={"#"}>
+                  <div className="flex items-center justify-center">
+                    <IoRestaurantOutline className="lg:text-5xl text-4xl" />
+                  </div>
+                  <p className="text-center mt-3 font-bold">Restaurant</p>
+                </UnstyledLink>
+              </ul>
             </div>
           </div>
         </div>
