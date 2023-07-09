@@ -11,6 +11,7 @@ import {
 } from "react-icons/io5";
 import UnstyledLink from "../../components/link/UnstyledLink";
 import Button from "../../components/button/Button";
+import Animasi from "../../components/Animasi";
 
 export default function Home() {
   const destinasiMetaData = getDestinasiMetaData();
@@ -72,6 +73,28 @@ export default function Home() {
             Oleh-oleh Khas Kota Dumai
           </span>
         </h2>
+      </section>
+      <section className="min-h-screen py-[120px] px-[10%] bg-white">
+        <div className="flex ">
+          <div className="text-black text-xl">Temukan</div>
+          <ul className="ml-[15px] h-[90px] leading-[90px] overflow-hidden">
+            <li className="ketik">
+              <span className="span">Objek Wisata</span>
+            </li>
+            <li className="ketik">
+              <span className="span">Kuliner</span>
+            </li>
+            <li className="ketik">
+              <span className="span">Penginapan</span>
+            </li>
+            <li className="ketik">
+              <span className="span">Cinderamata</span>
+            </li>
+            <li className="ketik">
+              <span className="span">Event</span>
+            </li>
+          </ul>
+        </div>
       </section>
     </>
   );
